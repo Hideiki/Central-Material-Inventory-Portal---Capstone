@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:return_no",
+ "creation": "2026-07-27 15:32:33.060098",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "return_no",
+  "date_return",
+  "returned_to",
+  "reference_type",
+  "reference_no",
+  "requested_by",
+  "received_by",
+  "department__section",
+  "return_status",
+  "return_reason",
+  "remarks",
+  "items",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "return_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Return No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_return",
+   "fieldtype": "Date",
+   "label": "Date Return"
+  },
+  {
+   "fieldname": "returned_to",
+   "fieldtype": "Select",
+   "label": "Returned To",
+   "options": "Main Warehouse\nConstruction A\nConstruction B\nStorage Facility"
+  },
+  {
+   "fieldname": "reference_type",
+   "fieldtype": "Select",
+   "label": "Reference Type",
+   "options": "Stock In / Receiving\nStock Out / Withdrawal"
+  },
+  {
+   "fieldname": "reference_no",
+   "fieldtype": "Data",
+   "label": "Reference No"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Requested By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "User"
+  },
+  {
+   "fieldname": "department__section",
+   "fieldtype": "Select",
+   "label": "Department / Section",
+   "options": "Operations\nConstruction\nProcurement\nAdministration\nWarehouse\nOther"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "return_status",
+   "fieldtype": "Select",
+   "label": "Return Status",
+   "options": "Pending\nApproved\nRejected\nCompleted"
+  },
+  {
+   "fieldname": "return_reason",
+   "fieldtype": "Select",
+   "label": "Return Reason",
+   "options": "Overstock / Excess\nDamaged / Defective\nWrong Item\nQuality Issue\nOther"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Material Return Item"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-27 16:15:36.224823",
+ "modified_by": "Administrator",
+ "module": "Cmip",
+ "name": "Material Return",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

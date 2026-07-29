@@ -1,0 +1,15 @@
+{
+  "name": "cmip",
+  "version": "1.0.0",
+  "description": "CMIP made using Frappe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd warehouse && yarn install",
+    "dev": "cd warehouse && yarn dev",
+    "build": "cd warehouse && yarn build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-07-29 08:32:38.520815",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "system_name",
+  "organization",
+  "default_language",
+  "date_format",
+  "time_format",
+  "items_per_page",
+  "low_stock_alerts",
+  "stock_in_notifications",
+  "stock_out_notifications",
+  "purchase_request_notifications",
+  "return_notifications",
+  "backup_frequency",
+  "backup_time",
+  "last_backup",
+  "theme",
+  "sidebar_mode"
+ ],
+ "fields": [
+  {
+   "default": "Centralized Material Inventory Portal",
+   "fieldname": "system_name",
+   "fieldtype": "Data",
+   "label": "System Name"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "default": "English",
+   "fieldname": "default_language",
+   "fieldtype": "Select",
+   "label": "Default Language",
+   "options": "English\nFilipino"
+  },
+  {
+   "default": "MM/DD/YYYY",
+   "fieldname": "date_format",
+   "fieldtype": "Select",
+   "label": "Date Format",
+   "options": "MM/DD/YYYY\nDD/MM/YYYY\nYYYY-MM-DD"
+  },
+  {
+   "default": "12-hour",
+   "fieldname": "time_format",
+   "fieldtype": "Select",
+   "label": "Time Format",
+   "options": "12-hour\n24-hour"
+  },
+  {
+   "default": "10",
+   "fieldname": "items_per_page",
+   "fieldtype": "Select",
+   "label": "Items Per Page",
+   "options": "10\n25\n50\n100"
+  },
+  {
+   "default": "1",
+   "fieldname": "low_stock_alerts",
+   "fieldtype": "Check",
+   "label": "Low Stock Alerts"
+  },
+  {
+   "default": "1",
+   "fieldname": "stock_in_notifications",
+   "fieldtype": "Check",
+   "label": "Stock In Notifications"
+  },
+  {
+   "default": "1",
+   "fieldname": "stock_out_notifications",
+   "fieldtype": "Check",
+   "label": "Stock Out Notifications"
+  },
+  {
+   "default": "1",
+   "fieldname": "purchase_request_notifications",
+   "fieldtype": "Check",
+   "label": "Purchase Request Notifications"
+  },
+  {
+   "default": "1",
+   "fieldname": "return_notifications",
+   "fieldtype": "Check",
+   "label": "Return Notifications"
+  },
+  {
+   "default": "Daily",
+   "fieldname": "backup_frequency",
+   "fieldtype": "Select",
+   "label": "Backup Frequency",
+   "options": "Daily\nWeekly\nMonthly"
+  },
+  {
+   "fieldname": "backup_time",
+   "fieldtype": "Time",
+   "label": "Backup Time"
+  },
+  {
+   "fieldname": "last_backup",
+   "fieldtype": "Datetime",
+   "label": "Last Backup",
+   "read_only": 1
+  },
+  {
+   "default": "Light",
+   "fieldname": "theme",
+   "fieldtype": "Select",
+   "label": "Theme",
+   "options": "Light\nDark"
+  },
+  {
+   "default": "Expanded",
+   "fieldname": "sidebar_mode",
+   "fieldtype": "Select",
+   "label": "Sidebar Mode",
+   "options": "Expanded\nCollapsed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-07-29 08:42:29.997224",
+ "modified_by": "Administrator",
+ "module": "Cmip",
+ "name": "Portable Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
